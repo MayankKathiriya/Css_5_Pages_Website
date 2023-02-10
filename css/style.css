@@ -1,0 +1,952 @@
+ /* -------defult css---------- */
+* {
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.d-flex {
+    display: flex;
+}
+.j-bettwin {
+    justify-content: space-between;
+}
+.j-center {
+    justify-content: center;
+}
+.j-end {
+    justify-content: flex-end;
+}
+.a-item {
+    align-items: center;
+}
+.f-direction {
+    flex-direction: column;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+:root {
+    --p-color: rgb(36, 202, 177);
+}
+.space {
+    margin-bottom: 90px;
+}
+.btn {
+    padding: 10px 15px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 15px 0 15px 0;
+    transition: 1s;
+}
+.btn:hover {
+    border-radius: 0 15px 0 15px;
+    letter-spacing: 1px;
+}
+.padding {
+    padding: 35px 20px 20px 20px;
+}
+/* -------header-------- */
+header {
+    box-shadow: 1px 1px 10px var(--p-color);
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to right, #12c2e94a, #c471ed53, #f64f5a44);
+    z-index: 5;
+    border-bottom: 1px solid rgba(194, 194, 194, 0.04);
+    backdrop-filter: blur(4px);
+}
+
+.logo {
+    width: 17%;
+}
+
+.logo a img {
+    width: 100%;
+    padding: 7px;
+}
+
+.container nav ul li a {
+    margin: 0 15px;
+    padding: 10px;
+    transition: 1s;
+    background-color: var(--p-color);
+    border-radius: 15px 0 15px 0;
+    color: white;
+    font-weight: 600;
+}
+.container nav ul li a:hover {
+    border: 1px solid rgb(255, 68, 0);
+    border-radius: 0 20px 0 20px;
+    background-color: transparent;
+    color: rgb(255, 68, 0);
+}
+/* -----benner----- */
+marquee img {
+    opacity: 0.5;
+}
+.benner {
+    background-image: url(../images/home-2\(flip\).jpg);
+    width: 100%;
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    animation: chang 5s infinite alternate 3s;
+}
+.benner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    background-color: rgba(2, 0, 0, 0.5);
+    z-index: -1;
+}
+.benner::before {
+    content: '“The first wealth is health.” - Ralph Waldo Emerson';
+    position: absolute;
+    width: 30%;
+    height: 24%;
+    bottom: -12%;
+    right: 4%;
+    background-color: #e0e0ea;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    font-family: Algerian;
+    color: rgb(253, 94, 37);
+    border-radius: 0 40px 0 40px;
+    box-shadow: 1px 2px 8px 3px rgba(73, 73, 73, 0.551);
+}
+.content h1 {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-size: 45px;
+}
+.content p {
+    color: white;
+    font-size: 17px;
+    padding: 8px 130px;
+    text-align: center;
+}
+
+/*----------- new section ------------*/
+.sub-div {
+    width: 80%;
+}
+
+.subi {
+    margin: 10px;
+    box-shadow: 1px 2px 20px rgb(228, 228, 228);
+}
+
+.sub-div .sub-icon-1 {
+    width: 40%;
+    height: 280px;
+    background-image: url(../images/66.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 40% 0 40%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-div .sub-icon-1:after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    width: 100%;
+    height: 280px;
+    border-radius: 0 40% 0 40%;
+    background-color: rgba(172, 108, 108, 0.5);
+    visibility: hidden;
+    transition: 1s;
+}
+
+.sub-div .sub-icon-1:hover::after {
+    content: 'Research & Development';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: white;
+    visibility: visible;
+    left: 0;
+    top: 0;
+    height: 280px;
+}
+
+.sub-div .sub-icon-2 {
+    width: 40%;
+    height: 280px;
+    background-image: url(../images/b1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40% 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-div .sub-icon-2:after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    width: 100%;
+    height: 280px;
+    border-radius: 40% 0;
+    background-color: rgba(172, 108, 108, 0.5);
+    visibility: hidden;
+    transition: 1s;
+}
+
+.sub-div .sub-icon-2:hover::after {
+    content: 'Best Teams';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 32px;
+    color: white;
+    visibility: visible;
+    left: 0;
+    top: 0;
+    height: 280px;
+}
+
+.sub-div .sub-icon-3 {
+    width: 40%;
+    height: 280px;
+    background-image: url(../images/b2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40% 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-div .sub-icon-3:after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    right: -100%;
+    width: 100%;
+    height: 280px;
+    border-radius: 40% 0;
+    background-color: rgba(172, 108, 108, 0.5);
+    visibility: hidden;
+    transition: 1s;
+}
+
+.sub-div .sub-icon-3:hover::after {
+    content: 'Friendly Culture';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 32px;
+    color: white;
+    visibility: visible;
+    top: 0;
+    right: 0;
+    height: 280px;
+}
+
+.sub-div .sub-icon-4 {
+    width: 40%;
+    height: 280px;
+    background-image: url(../images/ticon3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 40% 0 40%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-div .sub-icon-4:after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    right: -100%;
+    width: 100%;
+    height: 280px;
+    border-radius: 0 40% 0 40%;
+    background-color: rgba(172, 108, 108, 0.5);
+    visibility: hidden;
+    transition: 1s;
+}
+
+.sub-div .sub-icon-4:hover::after {
+    content: 'Great place to work';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 32px;
+    color: white;
+    visibility: visible;
+    top: 0;
+    right: 0;
+    height: 280px;
+}
+
+.bgbenner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #12c2e9ab, #c471ed9d, #f64f5ab0);
+    position: relative;
+    z-index: 0;
+    padding: 20px;
+}
+
+.bgbenner:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(7, 7, 7, 0.356);
+    z-index: -1;
+}
+
+.bgbenner::before {
+    content: 'Our-Facility';
+    position: absolute;
+    width: 20%;
+    height: 14%;
+    bottom: -7%;
+    left: 1%;
+    background-color: white;
+    padding: 5px 12px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Algerian;
+    color: rgb(253, 94, 37);
+    border-radius: 0 40px 0 40px;
+    box-shadow: 1px 2px 8px 3px rgba(93, 93, 93, 0.708);
+    transition: 1s;
+}
+
+/* ----------new section------------ */
+.extra-b-space {
+    margin-top: 200px;
+}
+
+.second-benner {
+    background-image: url(../images/second_section_bg.jpg);
+    height: 60vh;
+    padding: 40px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.second-benner::after {
+    content: '';
+    position: absolute;
+    top: -32%;
+    left: 32%;
+    width: 450px;
+    height: 250px;
+    background-image: url(../images/unison_factory_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.second-benner .container {
+    padding: 20px;
+    padding-top: 150px;
+}
+
+.second-benner .container .subdiv {
+    width: 20%;
+    margin: 10px 20px;
+}
+.imgdiv {
+    width: 50%;
+}
+.imgdiv h2 {
+    font-size: 40px;
+    color: #fff;
+}
+.second-benner .container h3 {
+    color: #fff;
+    margin: 10px;
+}
+.second-benner .container .subdiv img {
+    width: 100%;
+    margin: 0 5px;
+}
+.vacancy {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.623);
+    box-shadow: 1px 1px 10px var(--p-color);
+    font-size: 22px;
+    color: red;
+    text-shadow: 1px 2px 2px #8f8f92;
+}
+/* -------------certification---------------- */
+.map {
+    background-image: url(../images/map.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.map::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(254, 253, 253, 0.7);
+    z-index: -1;
+    background-attachment: fixed;
+}
+.cs-container h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: Algerian;
+    color: rgb(253, 94, 37);
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    position: relative;
+}
+.cs-container h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right, transparent, #ccc, transparent);
+}
+
+.sectionimg .img {
+    width: 10%;
+    text-align: center;
+    margin: 30px 40px;
+}
+
+.sectionimg .img h3 {
+    margin: 10px 0 10px 10px;
+    color: #009999;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.sectionimg .img img {
+    width: 100%;
+}
+
+/* -------r&d and csr-------- */
+.box {
+    width: 100%;
+}
+
+.csr {
+    width: 50%;
+    background-image: url(../images/reserch_devlopment.jpg);
+    height: 390px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.csr::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #12c2e94a, #c471ed53, #f64f5a44);
+    transform: scaleX(0);
+    transition: 0.9s ease-in-out;
+}
+
+.csr:hover::after {
+    transform: scaleX(1);
+}
+
+.rnd {
+    background-image: url(../images/manufacturing_unit_bg.jpg);
+}
+
+.csr .content {
+    color: white;
+    padding: 0 80px;
+    z-index: 1;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.content button {
+    display: block;
+    margin: 20px 20px 20px 0;
+}
+
+/* --------------------news section---------------------  */
+.container .newsdiv {
+    width: 33.33%;
+    margin-top: 30px;
+    padding: 8px;
+    text-align: center;
+}
+
+.newsdiv img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 3px 6px 10px #c7c7c7;
+}
+
+.newsdiv p {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    color: #727273;
+}
+
+/* ----footer----- */
+footer {
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    padding: 12px;
+    position: relative;
+}
+
+.flogo img {
+    width: 10%;
+    position: absolute;
+    right: 12%;
+    bottom: 24%;
+    padding: 12px;
+}
+
+.container .footerdiv {
+    width: 25%;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.footerdiv h2 {
+    letter-spacing: 1px;
+    line-height: 3;
+    font-size: 28px;
+}
+
+.footerdiv span i {
+    color: blue;
+    font-size: 18px;
+}
+
+.footerdiv ul li a {
+    color: white;
+}
+
+.footerdiv ul li,
+.footerdiv p {
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+.social-icon i {
+    margin: 8px;
+    font-size: 26px;
+    color: blue;
+}
+
+.footer-p {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+/* -------products---------- */
+.product {
+    background-image: url(../images/benner-1.jpg);
+    background-attachment: fixed;
+}
+
+.product::before {
+    content: 'Product';
+    font-size: 55px;
+}
+
+.mainpd {
+    margin-bottom: 15px;
+}
+
+.pc-div {
+    width: 50%;
+}
+
+.productimg img {
+    width: 100%;
+    transition: 1s linear;
+    z-index: -1;
+}
+
+.productimg:hover img {
+    transform: scale(1.2);
+}
+
+.description {
+    z-index: 1;
+}
+
+.description h3 {
+    font-size: 40px;
+    color: #525151;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.description ul li {
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 28px;
+}
+
+/*------------------ about us page----------------- */
+.aboutbenner {
+    background-image: url(../images/about_banner.jpg);
+    background-attachment: fixed;
+}
+
+.aboutbenner::before {
+    content: 'About To "MNJ"';
+    font-size: 45px;
+}
+
+.p .container p {
+    padding: 30px 160px;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #727273;
+
+}
+
+/* about background section */
+.about-bg {
+    background-image: url(../images/about_bg_section.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.about-bg-content {
+    padding: 80px;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.about-bg-content span {
+    font-size: 35px;
+}
+
+/* about fullwidth img section */
+.misson {
+    background-image: url(../images/mission.jpg);
+}
+
+.vision {
+    background-image: url(../images/vision.jpg);
+}
+
+.misson,
+.vision span {
+    font-size: 18px;
+}
+
+/*------------ manufacturing page---------- */
+.new-p .container p {
+    padding: 30px 50PX;
+    color: #727273;
+    text-align: justify;
+}
+
+.manufacturing {
+    background-image: url(../images/home_banner_4.jpg);
+}
+
+.manufacturing::before {
+    content: 'manufacturing';
+    font-size: 45px;
+}
+
+.mpc-div {
+    overflow: hidden;
+}
+
+.mpc-div img {
+    border-radius: 10px;
+}
+
+.mainpd {
+    margin-top: 20px;
+}
+
+.mdescription {
+    padding: 20px;
+}
+
+.mdescription h3 {
+    margin-bottom: 20px;
+}
+
+.mcontainer img {
+    margin: 18px;
+}
+
+.manu-bg {
+    background-color: #888892;
+    background-image: url(../images/right_bg_upper.png);
+}
+
+.m-bg-c {
+    font-size: 32px;
+}
+
+/* -----------------contact us page------------------ */
+.spaciality {
+    background-image: url(../images/contact_banner.jpg);
+}
+
+.spaciality::before {
+    content: 'Contact us';
+    font-size: 45px;
+}
+
+.container .container input {
+    display: block;
+    padding: 30px 40px;
+    margin: 20px;
+    border: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.container label {
+    text-align: left;
+    color: #8a8a8a;
+}
+
+.textcontent {
+    padding: 15px 200px;
+}
+
+.container label {
+    margin: 10px;
+}
+
+.container textarea {
+    border-radius: 10px
+}
+
+.c-formbtn {
+    border: 1px solid rgb(0, 145, 255);
+    color: rgb(0, 145, 255);
+    margin: 20px;
+}
+
+.c-formbtn:hover {
+    background-color: blue;
+    color: white;
+    letter-spacing: 0;
+}
+
+.addres {
+    background-color: #dadada;
+    width: 100%;
+    padding: 30px;
+}
+
+.addres-div h3 {
+    color: #12c2e9;
+    margin-bottom: 20px;
+}
+
+.addres-div h6 {
+    font-size: 22px;
+    color: #12c2e9;
+    display: inline;
+}
+
+.addres-div span {
+    color: black;
+}
+
+/* ---------R&D page------------ */
+.rd {
+    background-image: url(../images/banner-141.jpg);
+    background-position: top;
+}
+
+.rd::before {
+    content: 'Research & Development';
+    font-size: 30px;
+}
+
+.rnd-p p {
+    margin: 10px;
+    padding: 20px 150px;
+    text-align: justify;
+    line-height: 1.9;
+    font-size: 17px;
+    color: #888892;
+    letter-spacing: 0.5px;
+}
+
+.rnd-p p span {
+    text-transform: capitalize;
+    color: var(--p-color);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.boxheading {
+    color: var(--p-color);
+    font-size: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.borderradius {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 15px 40px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+    font-style: italic;
+    color: #30A0E5;
+    letter-spacing: 0.5px;
+    border: 1px solid #C5C5C8;
+    background-image: url(../images/right_bg_upper.png);
+}
+.rnddiv img {
+    width: 100%;
+    height: 260px;
+}
+.rndbox {
+    background-color: #F6F6F6;
+    padding: 100px;
+    background-image: url(../images/right_bg_upper.png);
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #727273;
+}
+/* ----------CSR-PAGES---------- */
+.csrpage {
+    background-image: url(../images/csr_banner.jpg);
+    background-position: top;
+}
+
+.csrpage::before {
+    content: 'Corporate Social Responsibility';
+    font-size: 30px;
+}
+
+.csrbgimg {
+    background-image: url(../images/csr_banner_sub.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 130px;
+    border-radius: 20px;
+}
+.csrcontent {
+    width: 50%;
+}
+.csrcontent p span {
+    font-size: 30px;
+}
+.csrcontent p {
+    font-size: 18px;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+.policydiv {
+    background-color: darkblue;
+    padding: 22px;
+    text-align: center;
+}
+.policydiv a {
+    color: white;
+    font-size: 22px;
+}
+.backtop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+}
+.backtop i {
+    font-size: 38px;
+    color: darkblue;
+    opacity: 0.7;
+}
